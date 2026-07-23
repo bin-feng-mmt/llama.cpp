@@ -17,6 +17,7 @@ set(HTP_LIB ggml-htp-${DSP_VERSION})
 add_library(${HTP_LIB} SHARED
     main.c
     htp_iface_skel.c
+    v2_shim.c
     work-queue.c
     dma-queue.c
     hmx-queue.c
